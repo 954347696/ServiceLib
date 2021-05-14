@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/refresh_empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_data_empty"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/foot_refresh_txt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/pbLoad"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="@color/color_480ed9"
+            android:indeterminate="false" />
+
+        <TextView
+            android:id="@+id/tvLoadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:text="正在加载更多..."
+            android:textColor="@color/color_8F8DA5"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/service_bg_home_pop"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_change_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:drawableLeft="@mipmap/service_ic_change_skin"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="30dp"
+        android:text="换肤"
+        android:textColor="@color/color_44"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:drawableLeft="@mipmap/service_ic_exit"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="30dp"
+        android:text="退出"
+        android:textColor="@color/color_44"
+        android:textSize="14sp" />
+</LinearLayout>

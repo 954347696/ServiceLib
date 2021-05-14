@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zzhoujay:html:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7053602e5080d58bf867aced91ffa581/jetified-html-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7053602e5080d58bf867aced91ffa581/jetified-html-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7053602e5080d58bf867aced91ffa581/jetified-html-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay/html/1.0.2/4f219e9f58be7b1df9f7e4a247864c0717cab811/html-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay/html/1.0.2/7638d98178cd364b7f1665c901f28a8e4c81935d/html-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

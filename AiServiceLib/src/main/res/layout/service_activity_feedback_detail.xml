@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.keepfun.aiservice.ui.view.ServiceTitleView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        app:stv_title="反馈详情" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <include
+                android:id="@+id/layout_feedback"
+                layout="@layout/service_item_feedback_detail" />
+
+            <include
+                android:id="@+id/layout_feedback_again"
+                layout="@layout/service_item_feedback_detail"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.keepfun.aiservice.ui.view.DrawableTextView
+            android:id="@+id/tv_dealed"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/service_bg_btn_6_radius"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="已解决"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            app:icsLeftDrawable="@drawable/service_ic_solved_selector"
+            app:icsLeftDrawableHeight="15dp"
+            app:icsLeftDrawableWidth="15dp" />
+
+        <com.keepfun.aiservice.ui.view.DrawableTextView
+            android:id="@+id/tv_undeal"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/service_bg_btn_6_radius"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="未解决"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            app:icsLeftDrawable="@drawable/service_ic_no_solved_selector"
+            app:icsLeftDrawableHeight="15dp"
+            app:icsLeftDrawableWidth="15dp" />
+
+    </LinearLayout>
+</LinearLayout>

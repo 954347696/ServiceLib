@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.protoojs.droid:protoo-client:4.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b389583653219e87dbe402c7a9b9247e/jetified-protoo-client-4.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b389583653219e87dbe402c7a9b9247e/jetified-protoo-client-4.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b389583653219e87dbe402c7a9b9247e/jetified-protoo-client-4.0.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.protoojs.droid/protoo-client/4.0.3/d1b285567f038c041194e9898d39b68996e97cc5/protoo-client-4.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.protoojs.droid/protoo-client/4.0.3/86b1e1eeb47ea5f72825805b90f06011971501f5/protoo-client-4.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgHome"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@mipmap/service_bg_home_top"
+        android:orientation="vertical"
+        skin:enable="true">
+
+        <com.keepfun.aiservice.ui.view.ServiceTitleView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            app:stv_left_img="@mipmap/service_ic_left_black_arrow"
+            app:stv_right_img="@mipmap/service_ic_more"
+            app:stv_show_left="true"
+            app:stv_title="我的客服"
+            app:stv_title_color="@color/textColorWithBg" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/service_bg_9_radius_white"
+            android:drawableLeft="@mipmap/service_ic_search"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="请输入关键词"
+            android:textColor="@color/textColorHint"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/service_bg_home_mid" />
+
+        <LinearLayout
+            android:id="@+id/layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/service_home_menu_top_margin"
+            android:background="@mipmap/service_bg_home_menu"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="@dimen/service_home_menu_top_padding"
+            android:paddingRight="15dp"
+            android:paddingBottom="@dimen/service_home_menu_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_humon_service"
+                    app:htv_tv="在线客服" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_questions"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_common_question"
+                    app:htv_tv="常见问题" />
+
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_tab_feedback"
+                    app:htv_tv="意见反馈" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_below"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_vip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_vip"
+                    app:htv_tv="VIP专线" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_video"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_video"
+                    app:htv_tv="视频通话" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/htv_tab_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_qt"
+                    app:htv_tv="语音客服" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/view_temp1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_qt"
+                    app:htv_tv="语音客服" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/view_temp2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_qt"
+                    app:htv_tv="语音客服" />
+
+                <com.keepfun.aiservice.ui.view.HomeTabView
+                    android:id="@+id/view_temp3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:htv_img="@mipmap/service_ic_qt"
+                    app:htv_tv="语音客服" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/service_ic_question_title" />
+
+        <ImageView
+            android:id="@+id/iv_guess_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/service_ic_refresh" />
+
+    </RelativeLayout>
+
+    <com.keepfun.aiservice.skin.SkinCompatRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/service_bg_home_questions" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/service_bg_btn"
+        android:gravity="center"
+        android:text="更多"
+        android:textColor="@color/textColorBtn"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/color_222222"
+        android:textSize="10sp" />
+
+</LinearLayout>

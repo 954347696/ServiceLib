@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/choose_photo_bg_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/choose_photo_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="35dp"
+        android:paddingBottom="30dp"
+        android:text="相册（拍照）选择"
+        android:textColor="@color/color_2E2946"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDE8F4"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/choose_photo_look_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="查看大图"
+        android:textColor="@color/color_2E2946"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_F9F8FB" />
+
+    <TextView
+        android:id="@+id/choose_photo_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="26dp"
+        android:paddingBottom="41dp"
+        android:text="取消"
+        android:textColor="@color/color_2E2946"
+        android:textSize="16sp" />
+
+</LinearLayout>

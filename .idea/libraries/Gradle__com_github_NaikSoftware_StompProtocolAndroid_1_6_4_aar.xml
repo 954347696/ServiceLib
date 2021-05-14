@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.NaikSoftware:StompProtocolAndroid:1.6.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca940d474ed0f8a33ca003be292235c4/jetified-StompProtocolAndroid-1.6.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca940d474ed0f8a33ca003be292235c4/jetified-StompProtocolAndroid-1.6.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca940d474ed0f8a33ca003be292235c4/jetified-StompProtocolAndroid-1.6.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.NaikSoftware/StompProtocolAndroid/1.6.4/2aa5b87eb52d24525a3bc4e6c8c03468970468d8/StompProtocolAndroid-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ServiceTitleView">
+        <attr name="stv_left_img" format="reference|color" />
+        <attr name="stv_left_tv" format="string" />
+        <attr name="stv_show_left" format="boolean" />
+        <attr name="stv_title" format="string" />
+        <attr name="stv_title_color" format="reference|color" />
+        <attr name="stv_right_img" format="reference|color" />
+        <attr name="stv_right_tv" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HomeTabView">
+        <attr name="htv_img" format="reference|color" />
+        <attr name="htv_tv" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsDrawableTextView">
+        <attr name="icsLeftDrawable" format="reference|color" />
+        <attr name="icsRightDrawable" format="reference|color" />
+        <attr name="icsTopDrawable" format="reference|color" />
+        <attr name="icsBottomDrawable" format="reference|color" />
+
+        <attr name="icsLeftDrawableWidth" format="reference|dimension" />
+        <attr name="icsRightDrawableWidth" format="reference|dimension" />
+        <attr name="icsTopDrawableWidth" format="reference|dimension" />
+        <attr name="icsBottomDrawableWidth" format="reference|dimension" />
+
+        <attr name="icsLeftDrawableHeight" format="reference|dimension" />
+        <attr name="icsRightDrawableHeight" format="reference|dimension" />
+        <attr name="icsTopDrawableHeight" format="reference|dimension" />
+        <attr name="icsBottomDrawableHeight" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsCropImageView">
+        <attr name="icsCropMaskColor" format="color" />
+        <attr name="icsCropBorderColor" format="color" />
+        <attr name="icsCropBorderWidth" format="dimension" />
+        <attr name="icsCropFocusWidth" format="dimension" />
+        <attr name="icsCropFocusHeight" format="dimension" />
+        <attr name="icsCropStyle" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IcsAndRatingBar">
+        <!-- color of star -->
+        <attr name="icsStarColor" format="color|reference" />
+
+        <!-- color of secondary star -->
+        <attr name="icsSubStarColor" format="color|reference" />
+
+        <!-- color of background star -->
+        <attr name="icsBgColor" format="color|reference" />
+
+        <!-- drawable of star -->
+        <attr name="icsStarDrawable" format="reference" />
+
+        <!-- drawable of background star -->
+        <attr name="icsBgDrawable" format="reference" />
+
+        <!-- if keep the origin color of star drawable -->
+        <attr name="icsKeepOriginColor" format="boolean" />
+
+        <!-- the scale factor of ratingbar that can change the spacing of star -->
+        <attr name="icsScaleFactor" format="float" />
+
+        <!-- additional the spacing of the star -->
+        <attr name="icsStarSpacing" format="dimension" />
+
+        <!-- right to left -->
+        <attr name="icsRight2Left" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsBanner">
+        <attr name="icsBanner_loop_time" format="integer" />
+        <attr name="icsBanner_auto_loop" format="boolean" />
+        <attr name="icsBanner_infinite_loop" format="boolean" />
+
+        <!--RoundLinesIndicator、RectangleIndicator-->
+        <attr name="icsBanner_indicator_height" format="dimension" />
+        <attr name="icsBanner_indicator_radius" format="dimension" />
+
+        <!-- 以下为公用属性 -->
+        <attr name="icsBanner_indicator_selected_width" format="dimension" />
+        <!--CircleIndicator-->
+        <attr name="icsBanner_indicator_normal_width" format="dimension" />
+        <attr name="icsBanner_indicator_space" format="dimension" />
+
+        <attr name="icsBanner_indicator_normal_color" format="reference|color" />
+        <attr name="icsBanner_indicator_selected_color" format="reference|color" />
+        <attr name="icsBanner_indicator_margin" format="dimension" />
+        <attr name="icsBanner_indicator_marginLeft" format="dimension" />
+        <attr name="icsBanner_indicator_marginTop" format="dimension" />
+        <attr name="icsBanner_indicator_marginRight" format="dimension" />
+        <attr name="icsBanner_indicator_marginBottom" format="dimension" />
+
+        <attr name="icsBanner_indicator_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="icsBanner_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="icsBanner_radius" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="IcsEmojicon">
+        <attr name="icsEmojiconSize" format="dimension" />
+        <attr name="icsEmojiconAlignment" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="baseline" value="1" />
+        </attr>
+        <attr name="icsEmojiconTextStart" format="integer" />
+        <attr name="icsEmojiconTextLength" format="integer" />
+        <attr name="icsEmojiconUseSystemDefault" format="boolean" />
+    </declare-styleable>
+
+    <!--收起展开textview-->
+    <declare-styleable name="IcsExpandableTextView">
+        <attr name="icsMaxCollapsedLines" format="integer" />
+        <attr name="icsAnimDuration" format="integer" />
+        <attr name="icsEpandDrawable" format="reference" />
+        <attr name="icsCollapseDrawable" format="reference" />
+        <attr name="icsContentTextColor" format="color" />
+        <attr name="icsContentTextAppearance" format="reference" />
+        <attr name="icsCollapseExpandTextColor" format="color" />
+        <attr name="icsContentTextSize" format="dimension" />
+        <attr name="icsCollapseExpandTextSize" format="dimension" />
+        <attr name="icsTextCollapse" format="string" />
+        <attr name="icsTextExpand" format="string" />
+        <attr name="icsCollapseExpandGrarity">
+            <flag name="center_h" value="1" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+        <attr name="icsDrawableGrarity">
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IcsRoundedImageView">
+        <attr name="ics_riv_corner_radius" format="dimension" />
+        <attr name="ics_riv_corner_radius_top_left" format="dimension" />
+        <attr name="ics_riv_corner_radius_top_right" format="dimension" />
+        <attr name="ics_riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="ics_riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="ics_riv_border_width" format="dimension" />
+        <attr name="ics_riv_border_color" format="color" />
+        <attr name="ics_riv_mutate_background" format="boolean" />
+        <attr name="ics_riv_oval" format="boolean" />
+        <attr name="ics_riv_square" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="ics_riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="ics_riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="ics_riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IcsButtonBarContainerTheme">
+        <attr name="ics_metaButtonBarStyle" format="reference" />
+        <attr name="ics_metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsPuzzleView">
+        <attr name="ics_line_size" format="integer" />
+        <attr name="ics_line_color" format="color" />
+        <attr name="ics_selected_line_color" format="color" />
+        <attr name="ics_handle_bar_color" format="color" />
+        <attr name="ics_need_draw_line" format="boolean" />
+        <attr name="ics_need_draw_outer_line" format="boolean" />
+        <attr name="ics_piece_padding" format="dimension" />
+        <attr name="ics_animation_duration" format="integer" />
+        <attr name="ics_radian" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsSubsamplingScaleImageView">
+        <attr name="ics_src" format="reference" />
+        <attr name="ics_assetName" format="string" />
+        <attr name="ics_panEnabled" format="boolean" />
+        <attr name="ics_zoomEnabled" format="boolean" />
+        <attr name="ics_quickScaleEnabled" format="boolean" />
+        <attr name="ics_tileBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IcsCircleProgressView">
+        <attr name="ics_cpv_progressNormalColor" format="color"/>
+        <attr name="ics_cpv_progressReachColor" format="color"/>
+        <attr name="ics_cpv_progressTextColor" format="color"/>
+        <attr name="ics_cpv_progressTextSize" format="dimension"/>
+        <attr name="ics_cpv_progressTextOffset" format="dimension"/>
+        <attr name="ics_cpv_progressNormalSize" format="dimension"/>
+        <attr name="ics_cpv_progressReachSize" format="dimension"/>
+        <attr name="ics_cpv_radius" format="dimension"/>
+        <attr name="ics_cpv_progressTextVisible" format="boolean"/>
+        <attr name="ics_cpv_progressStartArc" format="integer"/>
+        <attr name="ics_cpv_progressTextSkewX" format="dimension"/>
+        <attr name="ics_cpv_progressTextPrefix" format="string"/>
+        <attr name="ics_cpv_progressTextSuffix" format="string"/>
+        <attr name="ics_cpv_innerBackgroundColor" format="color"/>
+        <attr name="ics_cpv_progressStyle" format="enum">
+            <enum name="Normal" value="0"/>
+            <enum name="FillInner" value="1"/>
+            <enum name="FillInnerArc" value="2"/>
+        </attr>
+        <attr name="ics_cpv_innerProgressColor" format="color"/>
+        <attr name="ics_cpv_innerPadding" format="dimension"/>
+        <attr name="ics_cpv_outerColor" format="color"/>
+        <attr name="ics_cpv_outerSize" format="dimension"/>
+        <attr name="ics_cpv_reachCapRound" format="boolean"/>
+    </declare-styleable>
+</resources>

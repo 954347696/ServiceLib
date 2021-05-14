@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.keepfun.aiservice.ui.view.ServiceTitleView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingTop="45dp"
+        app:stv_title="选择日期" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusedMonthDateColor="#FFE610"
+        android:selectedWeekBackgroundColor="#FFE610" />
+    <!--        android:daySelectorColor="#FFE610" -->
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/service_bg_6_radius_accent"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/color_222222"
+        android:textSize="13sp" />
+</LinearLayout>

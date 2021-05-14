@@ -1,0 +1,4 @@
+include ':skin'
+include ':AiServiceLib'
+include ':app'
+rootProject.name = "ServiceLib"

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp">
+
+        <com.keepfun.aiservice.ui.view.roundedimageview.RoundedImageView
+            android:id="@+id/user_red_avatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            app:ics_riv_oval="true"
+            android:src="@mipmap/service_bg_chat_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_red_nickname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="我是体育主播"
+                android:textColor="#2E2946"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/time_red_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06.09  10:23"
+                android:textColor="@color/color_8F8DA5"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/coin_red_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="100"
+            android:textColor="#2E2946"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="K币"
+            android:textColor="#2E2946"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EDE8F4" />
+</LinearLayout>

@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.keepfun.login"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode project.LIB_VERSION_CODE as int
+        versionName project.LIB_VERSION_NAME
+
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        lintOptions {
+            abortOnError false
+        }
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'ylteck'
+            keyPassword 'ylteck123'
+            storeFile file('../Ylteck.jks')
+            storePassword 'ylteck123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    task clearJar(type: Delete) {
+        //删除存在的
+        doLast {
+            println("---------------delete origin jar")
+            FileTree tree = fileTree("mylibs")
+            tree.visit {
+                element ->
+                    if (element.getName().startsWith("service")) {
+                        delete element.file
+                    }
+            }
+        }
+    }
+    task makeJar(type: Copy) {
+        println("------------------makeJar")
+        from('build/intermediates/aar_main_jar/debug/')
+        into('mylibs/')
+        include('classes.jar')
+        rename('classes.jar', "service_${project.LIB_VERSION_NAME}.jar")
+    }
+    makeJar.dependsOn(clearJar, build)
+
+
+    //必须，java 8或更高
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
+    implementation project(":AiServiceLib")
+
+    implementation(name: "media-debug", ext: "aar")
+//    implementation(name: "servicesdk0230", ext: "aar")
+
+    api 'skin.support:skin-support:4.0.5'                   // skin-support
+    api 'skin.support:skin-support-appcompat:4.0.5'         // skin-support 基础控件支持
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.3.0"
+    implementation 'com.github.NaikSoftware:StompProtocolAndroid:1.6.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    //chat lib end
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'org.protoojs.droid:protoo-client:4.0.3'
+
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    implementation "com.github.bumptech.glide:compiler:4.11.0"
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.11.0"
+
+
+//    implementation "com.cysion:ImagePicker:1.2.0.x"
+}

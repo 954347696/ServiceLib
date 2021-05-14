@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="service_home_menu_top_margin">-10dp</dimen>
+    <dimen name="service_home_menu_top_padding">10dp</dimen>
+    <dimen name="service_home_menu_bottom">30dp</dimen>
+    <dimen name="service_home_tab_top">0dp</dimen>
+    <dimen name="service_home_tab_bottom">15dp</dimen>
+    <dimen name="service_radius_btn">6dp</dimen>
+    <dimen name="service_home_tip_top_margin">0dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="def_height">50dp</dimen>
+
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+
+    <dimen name="sp_14">14sp</dimen>
+
+    <dimen name="sticker_text_size_easy_photos">16sp</dimen>
+    <dimen name="toolbar_size_easy_photos">42dp</dimen>
+</resources>

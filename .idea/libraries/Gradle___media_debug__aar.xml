@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: :media-debug:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07c71467a12f66c39bd7970801e7f17b/jetified-media-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07c71467a12f66c39bd7970801e7f17b/jetified-media-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07c71467a12f66c39bd7970801e7f17b/jetified-media-debug/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07c71467a12f66c39bd7970801e7f17b/jetified-media-debug/jars/libs/libwebrtc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07c71467a12f66c39bd7970801e7f17b/jetified-media-debug/jars/libs/facedetectlib_noface_V1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

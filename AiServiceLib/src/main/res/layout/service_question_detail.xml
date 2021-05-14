@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.keepfun.aiservice.ui.view.ServiceTitleView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:paddingTop="45dp"
+            app:stv_title="常见问题" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTip"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_msg_tip" />
+
+            <TextView
+                android:id="@+id/tv_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivTip"
+                android:background="@drawable/service_bg_message_tip"
+                android:gravity="center"
+                android:minWidth="17dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/service_bg_6_radius_white"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_question_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="18dp"
+                    android:drawableLeft="@mipmap/service_ic_question_tip"
+                    android:drawablePadding="7dp"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="********"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tv_question_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="18dp"
+                    android:text="操做步骤：\n***************************"
+                    android:textColor="@color/color_55"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:orientation="horizontal">
+
+                    <com.keepfun.aiservice.ui.view.DrawableTextView
+                        android:id="@+id/tv_dealed"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/service_bg_btn_6_radius"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="已解决"
+                        android:textColor="@color/service_color_accent_btn"
+                        android:textSize="14sp"
+                        app:icsLeftDrawable="@mipmap/service_ic_dealed"
+                        app:icsLeftDrawableHeight="15dp"
+                        app:icsLeftDrawableWidth="15dp" />
+
+                    <com.keepfun.aiservice.ui.view.DrawableTextView
+                        android:id="@+id/tv_undeal"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/service_bg_btn_6_radius"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:text="没解决"
+                        android:textColor="@color/service_color_accent_btn"
+                        android:textSize="14sp"
+                        app:icsLeftDrawable="@mipmap/service_ic_no_deal"
+                        app:icsLeftDrawableHeight="15dp"
+                        app:icsLeftDrawableWidth="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="关联问题"
+                android:textColor="@color/color_55"
+                android:textSize="14sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/service_bg_6_radius_white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

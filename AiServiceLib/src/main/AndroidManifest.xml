@@ -1,0 +1,222 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.keepfun.aiservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+
+
+    <application>
+        <activity
+            android:name=".ui.act.ServiceHomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.QuestionDetailActivity"
+            android:label="常见问题详情"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.act.QuestionnaireActivity"
+            android:label="询前问卷"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.SearchActivity"
+            android:label="搜索页"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.CommonQuestionActivity"
+            android:label="常见问题"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.FeedbackActivity"
+            android:label="意见反馈"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.FeedbackEditActivity"
+            android:label="我要反馈"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.FeedbackDetailActivity"
+            android:label="反馈详情"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.ServiceEvaluationActivity"
+            android:label="客服评价"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.ServiceOnlineActivity"
+            android:label="在线客服"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.act.ServiceMediaActivity"
+            android:label="音视频媒体"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.act.ServiceMediaActivity2"
+            android:label="音视频媒体"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.act.SkinListActivity"
+            android:label="皮肤列表"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.act.ServiceListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.VideoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.ChatGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.GroupChatDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.GroupMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.ChatSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.CalendarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.act.ServiceLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.OnDutyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.act.OnDutyDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.keepfun.base.WebActivity"
+            android:screenOrientation="portrait" />
+        <!--blankj start-->
+        <activity
+            android:name="com.keepfun.blankj.util.UtilsTransActivity4MainProcess"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.keepfun.blankj.util.UtilsTransActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:multiprocess="true"
+            android:theme="@style/ActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.keepfun.blankj.util.UtilsFileProvider"
+            android:authorities="${applicationId}.utilcode.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/util_code_provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.keepfun.blankj.util.MessengerUtils$ServerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="${applicationId}.messenger" />
+            </intent-filter>
+        </service>
+        <!--blankj end-->
+
+
+        <!-- 图片选择裁剪库 start-->
+        <activity
+            android:name="com.keepfun.imageselector.ImageSelectorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.keepfun.imageselector.ClipImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.keepfun.imageselector.PreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.keepfun.imageselector.PreviewImageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 图片选择裁剪库 end-->
+
+        <service android:name="com.keepfun.aiservice.downloader.DownloadService">
+            <intent-filter>
+                <action android:name="com.ixuea.android.downloader.DOWNLOAD_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.keepfun.easyphotos.ui.EasyPhotosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme" />
+        <activity
+            android:name="com.keepfun.easyphotos.ui.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosFullscreenTheme" />
+        <activity
+            android:name="com.keepfun.easyphotos.ui.PuzzleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.keepfun.easyphotos.ui.PuzzleSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/EasyPhotosTheme" />
+
+        <activity
+            android:name=".ui.act.RedPacketsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name=".ui.act.MediaService"/>
+
+    </application>
+
+</manifest>

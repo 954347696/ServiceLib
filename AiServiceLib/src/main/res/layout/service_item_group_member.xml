@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <com.keepfun.aiservice.ui.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@mipmap/service_bg_chat_default"
+        app:ics_riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+</LinearLayout>

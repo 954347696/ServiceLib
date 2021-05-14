@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/service_bg_home_tab"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/service_home_tab_top"
+            android:src="@mipmap/service_ic_common_question" />
+
+        <TextView
+            android:id="@+id/tv_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_alignRight="@+id/icon"
+            android:background="@drawable/service_bg_message_tip"
+            android:gravity="center"
+            android:minWidth="17dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/service_home_tab_bottom"
+        android:text="常见问题"
+        android:textColor="@color/textColorLight"
+        android:textSize="12sp" />
+    <!--        android:layout_marginTop="7dp"-->
+</LinearLayout>

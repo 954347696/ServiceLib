@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <com.keepfun.aiservice.ui.view.roundedimageview.RoundedImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@mipmap/service_bg_chat_default"
+        app:ics_riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/color_222222"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_bg_radius_4_ffe610"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="机器人"
+        android:textColor="@color/color_222222"
+        android:textSize="13sp" />
+
+</LinearLayout>

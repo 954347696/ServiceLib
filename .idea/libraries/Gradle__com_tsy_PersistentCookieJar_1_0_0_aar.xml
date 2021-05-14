@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tsy:PersistentCookieJar:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ab3e1287c86c1f29d9fc7a335700ce1/jetified-PersistentCookieJar-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ab3e1287c86c1f29d9fc7a335700ce1/jetified-PersistentCookieJar-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3ab3e1287c86c1f29d9fc7a335700ce1/jetified-PersistentCookieJar-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tsy/PersistentCookieJar/1.0.0/46973815c3e005c8c85a6a83f1cc9bc91a599ee7/PersistentCookieJar-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tsy/PersistentCookieJar/1.0.0/786fd5cb6d60511ee05563cef37939100a2ebdbe/PersistentCookieJar-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

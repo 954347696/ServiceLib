@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC282837" />
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/video_renderer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <com.keepfun.aiservice.ui.view.FreeSurfaceViewRender
+        android:id="@+id/fsvr_small"
+        android:layout_width="124dp"
+        android:layout_height="168dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp" />
+
+
+    <ImageView
+        android:id="@+id/switch_small_window"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/icon_switch_small_view" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="视频通话"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title"
+        android:background="#7D000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/service_ic_online_broadcast" />
+
+        <TextView
+            android:id="@+id/tv_broadcast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="公告：*****************"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_broadcast_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6dp"
+            android:padding="8dp"
+            android:src="@mipmap/service_ic_broadcast_close" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/layout_broadcast"
+        android:visibility="gone">
+
+        <com.keepfun.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_banner_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:padding="10dp"
+            android:src="@mipmap/service_ic_online_close" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_service_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <TextView
+        android:id="@+id/tv_service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_service_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_call_in_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_service_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#80000000"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:id="@+id/tv_mute"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:drawableTop="@drawable/service_ic_mute_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="静音"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_end_call"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:drawableTop="@mipmap/service_ic_end_call"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="结束"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_call_in"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="15dp"
+                android:drawableTop="@mipmap/service_ic_call"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="接听"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_loud"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:drawableTop="@drawable/service_ic_loud_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="扬声器"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_conversion_v2m"
+                android:layout_width="60dp"
+                android:layout_height="85dp"
+                android:drawableTop="@mipmap/service_ic_v2m"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="切语音"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

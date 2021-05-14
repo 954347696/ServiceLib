@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="themeBg">@color/color_F5F5F7</color>
+        <color name="bgHome">#FFFFFF</color>
+<!--    <color name="bgHome">#F6F7FB</color>-->
+    <color name="titleColor">@color/black</color>
+    <color name="textColor">@color/color_222222</color>
+    <color name="textColorWithBg">@color/white</color>
+    <color name="textColorBtn">@color/white</color>
+<!--    <color name="textColorWithBg">#FFFFFF</color>-->
+    <color name="textColorHint">@color/color_5A</color>
+    <color name="textColorLight">@color/color_666666</color>
+    <color name="divider">@color/color_EE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_55">#555555</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_5A">#5A5A5A</color>
+    <color name="color_FFE610">#FFE610</color>
+    <color name="color_FF9500">#FF9500</color>
+    <color name="color_F5F5F7">#F5F5F7</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_EE">#EEEEEE</color>
+    <color name="color_44">#444444</color>
+    <color name="color_99">#999999</color>
+    <color name="transport">#00000000</color>
+    <color name="color_88">#888888</color>
+    <color name="color_FFFBF0">#FFFBF0</color>
+    <color name="color_FFBE10">#FFBE10</color>
+    <color name="color_E8">#E8E8E8</color>
+    <color name="color_EB8F00">#EB8F00</color>
+    <color name="color_F9">#F9F9F9</color>
+    <color name="color_2E2946">#2E2946</color>
+    <color name="color_EDE8F4">#EDE8F4</color>
+    <color name="color_F9F8FB">#F9F8FB</color>
+    <color name="color_F0F3F6">#F0F3F6</color>
+    <color name="color_FFF8BE">#FFF8BE</color>
+    <color name="color_EE7F00">#EE7F00</color>
+    <color name="color_E9">#E9E9E9</color>
+    <color name="color_FF3838">#FF3838</color>
+    <color name="color_FF9E07">#FF9E07</color>
+    <color name="color_FFED17">#FFED17</color>
+    <color name="color_FFA200">#FFA200</color>
+    <color name="color_FF8F00">#FF8F00</color>
+    <color name="color_E7E7E7">#E7E7E7</color>
+    <color name="color_FFB900">#FFB900</color>
+    <color name="color_accent_end">#ff00BD8A</color>
+    <color name="color_accent_start">#ff6DD972</color>
+<!--    <color name="color_accent_end">#FD803D</color>-->
+<!--    <color name="color_accent_start">#FC293C</color>-->
+</resources>

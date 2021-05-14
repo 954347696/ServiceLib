@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:text="05-23 14:30"
+        android:textColor="@color/color_99"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/service_bg_14_radius_white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="05-23 14:30"
+        android:textColor="@color/color_88"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/service_bg_16_radius_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="本次服务会话结束"
+            android:textColor="@color/color_55"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请点击此处对客服进行"
+                android:textColor="@color/color_44"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:textColor="@color/color_FF8F00"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/service_ic_score_unselected" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/service_ic_score_unselected" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/service_ic_score_unselected" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/service_ic_score_unselected" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/service_ic_score_unselected" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_other_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="44dp"
+        android:visibility="visible">
+
+        <com.keepfun.aiservice.ui.view.roundedimageview.RoundedImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:ics_riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_88"
+                android:textSize="11sp" />
+
+            <com.keepfun.aiservice.ui.view.ExpandableTextView
+                android:id="@+id/tv_content_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/service_bg_chat_other"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                app:icsCollapseExpandGrarity="center_h"
+                app:icsCollapseExpandTextColor="@color/color_FFA200"
+                app:icsCollapseExpandTextSize="14sp"
+                app:icsContentTextColor="@color/textColor"
+                app:icsContentTextSize="15sp"
+                app:icsMaxCollapsedLines="10" />
+
+            <RelativeLayout
+                android:id="@+id/layout_pic_other"
+                android:layout_width="130dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/service_bg_chat_other"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp">
+
+                <com.keepfun.glide.GlideImageView
+                    android:id="@+id/iv_pic_other"
+                    android:layout_width="130dp"
+                    android:layout_height="124dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_load_other_pic"
+                    android:layout_width="130dp"
+                    android:layout_height="124dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.keepfun.glide.progress.CircleProgressView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:progress="0"
+                        app:ics_cpv_innerPadding="2dp"
+                        app:ics_cpv_outerColor="@color/transparent90_white"
+                        app:ics_cpv_outerSize="2dp"
+                        app:ics_cpv_progressNormalColor="@color/transparent"
+                        app:ics_cpv_progressReachColor="@color/transparent90_white"
+                        app:ics_cpv_progressStyle="FillInnerArc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="正在加载"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_video"
+                android:layout_width="wrap_content"
+                android:layout_height="166dp"
+                android:background="@drawable/service_bg_chat_other"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp">
+
+                <com.keepfun.glide.GlideImageView
+                    android:id="@+id/iv_video_other"
+                    android:layout_width="89dp"
+                    android:layout_height="158dp" />
+
+                <TextView
+                    android:id="@+id/tv_duration_other"
+                    android:layout_width="89dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/service_bg_video_mask"
+                    android:drawableLeft="@mipmap/service_ic_video_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_load_other_video"
+                    android:layout_width="89dp"
+                    android:layout_height="158dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.keepfun.glide.progress.CircleProgressView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:progress="0"
+                        app:ics_cpv_innerPadding="2dp"
+                        app:ics_cpv_outerColor="@color/transparent90_white"
+                        app:ics_cpv_outerSize="2dp"
+                        app:ics_cpv_progressNormalColor="@color/transparent"
+                        app:ics_cpv_progressReachColor="@color/transparent90_white"
+                        app:ics_cpv_progressStyle="FillInnerArc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="正在加载"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_voice_other"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/service_bg_chat_other"
+                android:gravity="center_vertical"
+                android:minWidth="130dp"
+                android:orientation="horizontal"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_other_voice_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0s"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_other_voice"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="8dp"
+                    android:src="@drawable/service_anim_other_voice" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_media_other"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/service_bg_chat_other"
+                android:gravity="center_vertical"
+                android:minWidth="130dp"
+                android:orientation="horizontal"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_other_media_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="时长：**:**"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_other_media"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@mipmap/service_ic_online_video_other" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/service_bg_chat_other"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="******"
+                    android:textColor="@color/color_44"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_activity_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:gravity="left"
+                    android:text="******"
+                    android:textColor="@color/color_44"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_activity_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="******"
+                    android:textColor="@color/color_44"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/service_bg_chat_other"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="11dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="很遗憾机器人无法为您服务，是否转人工客服？"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_ai_2_artificial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/service_bg_6_radius_accent"
+                    android:gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="14dp"
+                    android:paddingBottom="5dp"
+                    android:text="确认转接人工客服"
+                    android:textColor="@color/textColorBtn"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_packet"
+                android:layout_width="264dp"
+                android:layout_height="80dp"
+                android:background="@drawable/service_radiue_10_ffab13"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/service_ic_middle_packet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="恭喜发财，大吉大利"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_self_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="34dp"
+        android:paddingRight="14dp"
+        android:visibility="gone">
+
+        <com.keepfun.aiservice.ui.view.ExpandableTextView
+            android:id="@+id/tv_content_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/service_bg_chat_self"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            app:icsCollapseExpandGrarity="center_h"
+            app:icsCollapseExpandTextColor="@color/color_FFA200"
+            app:icsCollapseExpandTextSize="14sp"
+            app:icsContentTextAppearance="@style/TextColorBtn"
+            app:icsContentTextColor="@color/textColorBtn"
+            app:icsContentTextSize="15sp"
+            app:icsMaxCollapsedLines="10" />
+
+        <RelativeLayout
+            android:id="@+id/layout_pic_self"
+            android:layout_width="wrap_content"
+            android:layout_height="124dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/service_bg_chat_self"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="11dp"
+            android:paddingBottom="4dp">
+
+            <com.keepfun.glide.GlideImageView
+                android:id="@+id/iv_pic_self"
+                android:layout_width="130dp"
+                android:layout_height="124dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_load_self_pic"
+                android:layout_width="130dp"
+                android:layout_height="124dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.keepfun.glide.progress.CircleProgressView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="0"
+                    app:ics_cpv_innerPadding="2dp"
+                    app:ics_cpv_outerColor="@color/transparent90_white"
+                    app:ics_cpv_outerSize="2dp"
+                    app:ics_cpv_progressNormalColor="@color/transparent"
+                    app:ics_cpv_progressReachColor="@color/transparent90_white"
+                    app:ics_cpv_progressStyle="FillInnerArc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="正在加载"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_video_self"
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/service_bg_chat_self"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="11dp"
+            android:paddingBottom="4dp">
+
+            <com.keepfun.glide.GlideImageView
+                android:id="@+id/iv_video_self"
+                android:layout_width="89dp"
+                android:layout_height="158dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_duration_self"
+                android:layout_width="89dp"
+                android:layout_height="31dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/service_bg_video_mask"
+                android:drawableLeft="@mipmap/service_ic_video_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_load_self_video"
+                android:layout_width="89dp"
+                android:layout_height="158dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.keepfun.glide.progress.CircleProgressView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:progress="0"
+                    app:ics_cpv_innerPadding="2dp"
+                    app:ics_cpv_outerColor="@color/transparent90_white"
+                    app:ics_cpv_outerSize="2dp"
+                    app:ics_cpv_progressNormalColor="@color/transparent"
+                    app:ics_cpv_progressReachColor="@color/transparent90_white"
+                    app:ics_cpv_progressStyle="FillInnerArc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="正在加载"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_voice_self"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/service_bg_chat_self"
+            android:gravity="center_vertical"
+            android:minWidth="130dp"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/iv_self_voice"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/service_bg_accent_circle"
+                android:padding="8dp"
+                android:src="@drawable/service_anim_voice" />
+
+            <TextView
+                android:id="@+id/tv_self_voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="0s"
+                android:textColor="@color/textColorBtn"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_media_self"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/service_bg_chat_self"
+            android:gravity="center_vertical"
+            android:minWidth="130dp"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/iv_self_media"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="4dp"
+                android:src="@mipmap/service_ic_online_video2" />
+
+            <TextView
+                android:id="@+id/tv_self_media_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="时长：**:**"
+                android:textColor="@color/textColorBtn"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

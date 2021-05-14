@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/iv_skin_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="12dp"
+        android:src="@drawable/service_ic_skin_selector" />
+
+    <TextView
+        android:id="@+id/tv_skin_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/color_55"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00%"
+            android:textColor="@color/color_55"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_percent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="5dp"
+            android:max="100"
+            android:progressDrawable="@drawable/service_progressbar_download_color" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="6dp"
+            android:src="@drawable/service_ic_download_selector" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:src="@mipmap/service_ic_download_cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_bg_download_txt_selector"
+        android:paddingLeft="12dp"
+        android:paddingTop="3dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/service_skin_status"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
